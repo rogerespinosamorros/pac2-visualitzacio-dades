@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAC 2 | Visualització de dades</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            color: #263238;
+            background: #f5f7fa;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #17365d;
+        }
+
+        .visualitzacio {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .visualitzacio img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .boto {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #2457a7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .boto:hover {
+            background: #17365d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Visualització de dades — PAC 2</h1>
+        <p>
+            Exploració de tres tècniques de visualització mitjançant
+            dades obertes i Python.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="visualitzacio">
+            <h2>1. Heatmap: anomalies de temperatura global</h2>
+
+            <p>
+                El mapa de calor representa les anomalies mensuals de
+                temperatura global al llarg dels anys. Els colors permeten
+                distingir les anomalies positives i negatives i identificar
+                patrons temporals.
+            </p>
+
+            <img
+                src="grafics/heatmap_temperatura.png"
+                alt="Mapa de calor de les anomalies mensuals de temperatura global"
+            >
+        </section>
+
+        <section class="visualitzacio">
+            <h2>2. Diagrama de Gantt: projectes europeus</h2>
+
+            <p>
+                El diagrama de Gantt representa les dates d'inici i finalització
+                de 20 projectes europeus de recerca. Permet comparar-ne la
+                durada i observar els períodes de solapament.
+            </p>
+
+            <a
+                class="boto"
+                href="grafics/gantt_projectes.html"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Obrir el diagrama de Gantt interactiu
+            </a>
+        </section>
+
+        <section class="visualitzacio">
+            <h2>3. Horizon graph: anomalies de temperatura per país</h2>
+
+            <p>
+                Aquesta visualització compara les anomalies mensuals de
+                temperatura de sis països entre 1990 i 2025. Les bandes
+                de color permeten observar les variacions positives i
+                negatives en un espai vertical reduït.
+            </p>
+
+            <img
+                src="grafics/horizon_graph_temperatures.png"
+                alt="Horizon graph de les anomalies mensuals de temperatura de sis països"
+            >
+        </section>
+
+    </main>
+
+    <footer>
+        <p>PAC 2 · Visualització de dades</p>
+    </footer>
+
+</body>
+</html>
